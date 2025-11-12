@@ -5,8 +5,9 @@ from diffusers import (
     DPMSolverMultistepScheduler,
 )
 
-model_path = r"C:\Users\cfzjl\Desktop\SD\ComfyUI\models\checkpoints\JANKUV5NSFWTrainedNoobai_v50.safetensors"
-# 这里用的是我本地的模型。
+'''简易的生图模型。你可以找HuggingFace上的基本代码，但那下起来很麻烦，不如下载完放在本地。'''
+model_path = r"Any LOCAL MODEL"
+# 这里用的是我本地的模型路径。
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 dtype = torch.float16 if device == "cuda" else torch.float32
